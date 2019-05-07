@@ -18,7 +18,8 @@ public class EnumTest {
 enum Size{
     SMALL("S"),MED("M"),LA("L"),EX("XL");
     private String ss;
-    private Size(String ss){
+
+    Size(String ss){
         this.ss = ss;
     }
 
