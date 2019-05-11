@@ -1,5 +1,6 @@
 package reflection;
 
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -76,7 +77,7 @@ public class ReflectionTest {
             String modifiers = Modifier.toString(m.getModifiers());
             if (modifiers.length() > 0)
                 System.out.print(modifiers + " ");
-            System.out.print(retType.getName() + "(");
+            System.out.print(retType.getName() + " " + name + "(");
 
             Class[] paraTypes = m.getParameterTypes();
             for (int i=0;i<paraTypes.length;i++){
